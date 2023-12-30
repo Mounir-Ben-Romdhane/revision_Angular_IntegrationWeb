@@ -1,0 +1,30 @@
+<form [formGroup]="productForm">
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" formControlName="nameProduct" ></td>
+        <td><div *ngIf="productForm.controls['nameProduct'].touched &&
+        productForm.hasError('required','nameProduct')"> Name is required.
+        </div></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><input type="text" formControlName="price"></td>
+        <td><div *ngIf="productForm.hasError('pattern','price')"> Price not accepted.
+          </div></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><input type="text" formControlName="description"></td>
+        <td><div *ngIf="productForm.hasError('minlength','description')"> Description not accepted.
+        </div></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input [disabled]="productForm.invalid" type="submit" value="add product" (click)="addProduct()" ></td>
+      </tr>
+    </tbody>
+  </table>
+</form>

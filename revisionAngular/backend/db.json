@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "nameProduct": "product",
+      "price": "33",
+      "description": "anvanevaevoa",
+      "id": 1
+    },
+    {
+      "nameProduct": "product",
+      "price": "33",
+      "description": "anvanevaevoa",
+      "id": 2
+    },
+    {
+      "nameProduct": "productavav",
+      "price": "333",
+      "description": "anvanevaevAvvvoa",
+      "id": 3
+    },
+    {
+      "nameProduct": "Product",
+      "price": "999",
+      "description": "4TWIN6 has been voted for Mounir to become president",
+      "id": 4
+    }
+  ],
+  "card": [
+    {
+      "nameProduct": "product",
+      "price": "33",
+      "description": "anvanevaevoa",
+      "id": 1
+    },
+    {
+      "nameProduct": "productavav",
+      "price": "333",
+      "description": "anvanevaevAvvvoa",
+      "id": 3
+    },
+    {
+      "nameProduct": "product",
+      "price": "33",
+      "description": "anvanevaevoa",
+      "id": 2
+    }
+  ]
+}
