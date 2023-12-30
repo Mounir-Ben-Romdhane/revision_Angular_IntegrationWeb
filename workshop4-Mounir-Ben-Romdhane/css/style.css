@@ -1,0 +1,292 @@
+@import url(https://db.onlinewebfonts.com/c/028b4cfdfab5d1049178e9b1eb42f49e?family=Poppins+SemiBold);
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+.navItem {
+  color: #242f51;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin-right: 1.1rem;
+}
+
+.textInside {
+  text-align: center;
+}
+
+.navItem2 {
+  color: #616060;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Lato";
+  margin-right: 7rem;
+}
+
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.btndark {
+  border-radius: 3rem;
+}
+
+.imgCard {
+  width: 25rem;
+  height: 20rem;
+}
+
+.h2 {
+  font-size: 60px;
+  color: #242f51;
+  font-family: "Poppins SemiBold";
+}
+
+.h2S2 {
+  font-size: 36px;
+  color: #242f51;
+  font-family: "Poppins SemiBold";
+  font-weight: 600;
+}
+
+.text-hero {
+  font-size: 18px;
+  color: #616368;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.button-try {
+  background-color: #f55767;
+  border-color: #f55767;
+  border-radius: 3rem;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.badge1 {
+  font-family: "Poppins SemiBold";
+  font-size: 1.25 rem;
+  color: #f88b96;
+  font-weight: 600;
+}
+
+.badge2 {
+  font-family: "Poppins SemiBold";
+  font-size: 1.25 rem;
+  color: #2563ff;
+  font-weight: 600;
+}
+
+.badge3 {
+  font-family: "Poppins SemiBold";
+  font-size: 1.25 rem;
+  color: #40975f;
+  font-weight: 600;
+}
+
+p {
+  color: #616368;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.section2SpaceRight {
+  margin-right: 4rem;
+  margin-left: 5rem;
+}
+
+.mtS2 {
+  margin-top: 11.9rem;
+}
+
+.mtS22 {
+  margin-top: 4.75rem;
+}
+
+.footer {
+  background-color: #242f51;
+  height: 23.58rem;
+  margin-top: 10.73rem;
+}
+
+.titleFooter {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 5.63rem;
+}
+
+.textFooter {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: white;
+  margin-right: 2rem;
+}
+
+.iconsFt {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconsFt a {
+  font-size: 2rem;
+  margin-right: 2.6rem;
+  color: #fff;
+}
+.iconsFt a:last-child {
+  margin-right: 0;
+}
+
+.nav2 {
+  width: 100%;
+  height: 5.2rem;
+  background-color: #f4f4f4;
+}
+
+.h2t2 {
+  font-size: 3rem;
+  font-family: "Playfair Display SC";
+  font-weight: 700;
+  color: #151515;
+  margin-top: 5.5rem;
+}
+
+.liveTun {
+  margin-top: 2.5rem;
+}
+
+.p {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #141414;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.lorem {
+  font-size: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.img {
+  margin-top: 4.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.we {
+  font-size: 2.1rem;
+  font-family: "Playfair Display SC";
+  color: #bc694e;
+  font-weight: 700;
+}
+
+.styleTime {
+  margin-top: 2rem;
+  color: #848484;
+  font-family: "Lato";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.titleWork {
+  margin-top: -1rem;
+  margin-bottom: 0.4rem;
+  color: #4f4f4f;
+  font-size: 1.8rem;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.workType {
+  color: #848484;
+  font-size: 1.1rem;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.imgFooter {
+  width: 100%;
+}
+
+.box {
+  font-size: 2.1rem;
+  color: white;
+  font-family: "Playfair Display SC";
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3.9rem;
+  padding-right: 3.9rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.boxx {
+  margin-left: 27rem;
+  margin-top: 2rem;
+}
+
+.copyRight {
+  display: flex;
+  height: 7.5rem;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+}
+
+.pp {
+  font-size: 1.1rem;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #505050;
+  margin-top: 3.3rem;
+  margin-bottom: 3rem;
+}
+
+.iconsFt1 a {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #848484;
+}
+.iconsFt1 a:last-child {
+  margin-right: 0;
+}
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (max-width: 450px) {
+  .h2 {
+    font-size: 20px;
+    color: #242f51;
+    font-family: "Poppins SemiBold";
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1200px) {
+  .h2 {
+    font-size: 60px;
+    color: #242f51;
+    font-family: "Poppins SemiBold";
+  }
+}
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 40px;
+    color: #242f51;
+    font-family: "Poppins SemiBold";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
