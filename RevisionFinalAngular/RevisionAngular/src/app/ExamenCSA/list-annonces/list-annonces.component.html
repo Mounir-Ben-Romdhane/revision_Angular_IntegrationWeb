@@ -1,0 +1,11 @@
+<div *ngFor="let annonce of listAnnonces">
+  <div *ngIf="annonce.etat=='annulé'"></div>
+   <div class="bgVert" *ngIf="annonce.etat=='confirmé'">
+     <p>{{annonce.titre}}</p>
+      <p>{{annonce.description}} </p>
+    </div>
+    <div class="bgOrg" *ngIf="annonce.etat=='en attente'">
+      <p>{{annonce.titre}}</p>
+       <p>{{annonce.description}} </p>
+     </div>
+</div>

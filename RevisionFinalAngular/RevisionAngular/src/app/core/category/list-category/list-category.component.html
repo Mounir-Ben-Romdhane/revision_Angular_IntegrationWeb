@@ -1,0 +1,25 @@
+<a [routerLink]="['/addCategory']">Add category</a>
+
+<table border="2px solid black" >
+      <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>nbProduct</td>
+        <td>Actions</td>
+      </tr>
+      <tr *ngFor="let category of categories">
+        <td>{{category.id}}</td>
+        <td>{{category.name}}</td>
+        <td>{{category.nbProduct}}</td>
+        <td>
+          <button (click)="deleteCat(category.id!)">Delete</button>
+         <!-- <button (click)="goToUpdate(category.id!)">Update</button>-->
+         <button (click)="updateCat(category)">Update</button>
+          <button >Detail Cat</button>
+        </td>
+      </tr>
+</table>
+
+<div *ngIf="show">
+  <app-update-category [categoryy]="categoryToSelected" (notif)="traitement($event)" (updateCategory)="changeTab($event)"></app-update-category>
+</div>

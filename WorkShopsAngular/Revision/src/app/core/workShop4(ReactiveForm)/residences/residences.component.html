@@ -1,0 +1,8 @@
+<div *ngFor="let residence of listResidences; let i = index">
+  id: {{residence.id}} <br>
+  name: {{residence.name}} <br>
+  address: {{residence.address}} <br>
+  image: {{residence.image}} <br>
+  <button >Show apartments</button><br>
+  <a [routerLink]="['/apartments', residence.id]">apartments</a>
+</div>

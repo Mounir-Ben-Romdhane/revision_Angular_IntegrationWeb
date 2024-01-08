@@ -1,0 +1,9 @@
+<form #f="ngForm">
+ Name: <input type="text" name="name" required minlength="4" pattern="[0-9]*" [(ngModel)]="category.name" #name="ngModel">
+ <div *ngIf="name.errors?.['required'] && name.touched">* Name is required. </div>
+ <span *ngIf="name.errors?.['minlength']">
+  minlength
+  </span>
+  <span *ngIf="name.errors?.['pattern']">only numbers</span>
+   <button (click)="addCat()">Add Category</button>
+</form>

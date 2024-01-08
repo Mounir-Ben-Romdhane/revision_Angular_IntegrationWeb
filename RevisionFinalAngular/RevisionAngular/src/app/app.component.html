@@ -1,0 +1,8 @@
+<!--<router-outlet></router-outlet>-->
+<h1>Les articles du jour</h1><br>
+Veuillez saisir le nombre d'articles a afficher dans la page
+<input type="number" [(ngModel)]="search">
+
+<div>
+<app-page [listArticle] = "listArticles" [nbArticle]="search"></app-page>
+</div>

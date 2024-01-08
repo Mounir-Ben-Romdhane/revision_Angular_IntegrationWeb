@@ -1,0 +1,19 @@
+<form [formGroup]="estimerForm">
+Position souhaitée
+<select formControlName="position">
+  <option name="position"
+   *ngFor="let item of list" [value]="item">{{item}}</option>
+</select> <br>
+<span *ngIf="estimerForm.get('position')?.errors?.['required']" style="color:red">Position is Required </span><br>
+
+
+Nombre de caracteres: <input type="number" formControlName="nbDescription"> <br>
+<span *ngIf="estimerForm.get('nbDescription')?.errors?.['required']" style="color:red">description is Required </span><br>
+<span *ngIf="estimerForm.get('nbDescription')?.errors?.['max']" style="color:red">description must be max 60 caracteres  </span><br>
+
+<button (click)="estimer()" [disabled]="estimerForm.invalid">estimer</button>
+</form>
+
+<div *ngIf="show">
+    <p>Le cout de votre article est a {{result}} dt</p>
+</div>

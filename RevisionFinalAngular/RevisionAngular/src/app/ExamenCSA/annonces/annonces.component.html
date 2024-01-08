@@ -1,0 +1,18 @@
+<h1>Rebriques des annonces</h1>
+<!--
+<a href="" [routerLink]="['/listAnnonces']">Liste des annonces </a>
+<a href="" [routerLink]="['/estimationCout']">Estimation cout d'annonce</a>
+<app-list-annonces></app-list-annonces>
+<app-estimation-cout></app-estimation-cout> -->
+
+<a  (click)="fndisplayListe()"> liste des annonces </a>
+<a  (click)="fndisplayCout()"> Estimation des couts </a>
+
+<div [hidden]="displayListe">
+    <app-list-annonces></app-list-annonces>
+</div>
+
+
+<div [hidden]="displayCout">
+    <app-estimation-cout></app-estimation-cout>
+</div>

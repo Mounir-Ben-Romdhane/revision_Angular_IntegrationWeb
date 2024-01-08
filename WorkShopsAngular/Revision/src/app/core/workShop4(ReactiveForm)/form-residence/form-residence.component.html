@@ -1,0 +1,90 @@
+<form [formGroup]="apartForm">
+
+
+  <div class="form-group">
+    <label>Appartement number:</label>
+    <input type="text" class="form-control" id="appartementN" formControlName="appartNum" placeholder="appartementN">
+    <div *ngIf="apartForm.get('appartNum')?.invalid && (apartForm.get('appartNum')?.dirty || apartForm.get('appartNum')?.touched)">
+        <div *ngIf="apartForm.get('appartNum')?.errors?.['required']">Champ obligatoire</div>
+
+        <div *ngIf="apartForm.get('appartNum')?.errors?.['pattern']">Seuls les chiffres sont acceptés</div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label>Floor number:</label>
+    <input type="text" class="form-control" id="floorN" formControlName="floorNum" placeholder="floorN">
+    <div *ngIf="apartForm.get('floorNum')?.invalid && (apartForm.get('floorNum')?.dirty || apartForm.get('floorNum')?.touched)">
+        <div *ngIf="apartForm.get('floorNum')?.errors?.['required']">Champ obligatoire</div>
+
+        <div *ngIf="apartForm.get('floorNum')?.errors?.['pattern']">Seuls les chiffres sont acceptés</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Surface:</label>
+    <input type="number" class="form-control" id="surface" formControlName="surface" placeholder="surface">
+    <div *ngIf="apartForm.get('surface')?.invalid && (apartForm.get('surface')?.dirty || apartForm.get('surface')?.touched)">
+        <div *ngIf="apartForm.get('surface')?.errors?.['required']">Champ obligatoire</div>
+
+    </div>
+  </div>
+
+  <label>Terrace:</label>
+  <div class="radio-group">
+    <input type="radio" id="terraceYes" value="Yes" formControlName="terrace">
+    <label for="terraceYes">Yes</label>
+
+    <input type="radio" id="terraceNo" value="No" formControlName="terrace">
+    <label for="terraceNo">No</label>
+    <div *ngIf="apartForm.get('terrace')?.invalid && (apartForm.get('terrace')?.dirty || apartForm.get('terrace')?.touched)">
+        <div *ngIf="apartForm.get('terrace')?.errors?.['required']">Champ obligatoire</div>
+
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Surface Terrace:</label>
+    <input type="number" class="form-control" id="surfacet" formControlName="surfaceTerrace" placeholder="surfacet">
+    <div *ngIf="apartForm.get('surfaceTerrace')?.invalid && (apartForm.get('surfaceTerrace')?.dirty || apartForm.get('surfaceTerrace')?.touched)">
+        <div *ngIf="apartForm.get('surfaceTerrace')?.errors?.['required']">Champ obligatoire</div>
+    </div>
+  </div>
+
+  <label>Category:</label>
+  <div class="radio-group">
+    <input type="radio" id="cat1" value="S+1" formControlName="category">
+    <label for="cat1">S+1</label>
+
+    <input type="radio" id="cat2" value="S+2" formControlName="category">
+    <label for="cat2">S+2</label>
+
+    <input type="radio" id="cat3" value="S+3" formControlName="category">
+    <label for="cat3">S+3</label>
+    <div *ngIf="apartForm.get('category')?.invalid && (apartForm.get('category')?.dirty || apartForm.get('category')?.touched)">
+        <div *ngIf="apartForm.get('category')?.errors?.['required']">Champ obligatoire</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Description:</label>
+    <input type="text" class="form-control" id="description" formControlName="description" placeholder="description">
+    <div *ngIf="apartForm.get('description')?.invalid && (apartForm.get('description')?.dirty || apartForm.get('description')?.touched)">
+        <div *ngIf="apartForm.get('description')?.errors?.['required']">Champ obligatoire</div>
+
+        <div *ngIf="apartForm.get('description')?.errors?.['minlength']">Le champ description contient au moins 10 caractères</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Residence:</label>
+    <input type="number" class="form-control" id="residence" formControlName="residence" placeholder="residence">
+    <div *ngIf="apartForm.get('residence')?.invalid && (apartForm.get('residence')?.dirty || apartForm.get('residence')?.touched)">
+        <div *ngIf="apartForm.get('residence')?.errors?.['required']">Champ obligatoire</div>
+    </div>
+  </div>
+
+  <button  class="btn btn-primary" (click)="save()">Submit</button>
+  <button  class="btn btn-primary" (click)="update()">Update</button>
+</form>

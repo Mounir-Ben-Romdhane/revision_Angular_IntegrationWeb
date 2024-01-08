@@ -1,0 +1,32 @@
+<h1> Add Product </h1>
+
+<form [formGroup]="ProductForm">
+    Product Name : 
+    <input type="text" class="form-control" id="name" 
+    formControlName="name" placeholder="product Name"><br>
+
+    <span *ngIf="ProductForm.get('name')?.errors?.['required']" style="color:red">Name is Required </span><br>
+    <span *ngIf="ProductForm.get('name')?.errors?.['minlength']" style="color:red">Name must be min 5 caracteres  </span><br>
+
+    Product description : 
+    <input type="text" class="form-control" id="description" 
+    formControlName="description" placeholder="product description"><br>
+    <span *ngIf="ProductForm.get('description')?.errors?.['required']" style="color:red">description is Required </span><br>
+    <span *ngIf="ProductForm.get('description')?.errors?.['minlength']" style="color:red">description must be min 5 caracteres  </span><br>
+    <span *ngIf="ProductForm.get('description')?.errors?.['maxlength']" style="color:red">description must be max 10 caracteres  </span><br>
+    Product price : 
+    <input type="text" class="form-control" id="price" 
+    formControlName="price" placeholder="product price"><br>
+    <span *ngIf="ProductForm.get('price')?.errors?.['required']"  style="color:red">price is Required </span><br>
+    <span *ngIf="ProductForm.get('price')?.errors?.['pattern']"  style="color:red">price must number </span><br>
+    Product qte : 
+    <input type="text" class="form-control" id="qte" 
+    formControlName="qte" placeholder="product qte"><br>
+    <span *ngIf="ProductForm.get('qte')?.errors?.['required']" style="color:red">qte is Required </span><br>
+    <span *ngIf="ProductForm.get('qte')?.errors?.['pattern']"  style="color:red">qte must number </span><br>
+    Product category : 
+    <input type="text" class="form-control" id="category" 
+    formControlName="category" placeholder="product category" ><br>
+
+    <button type="submit" [disabled]="ProductForm.invalid" (click)="addProduct()">Save </button>
+</form>

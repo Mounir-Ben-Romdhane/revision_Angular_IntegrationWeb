@@ -1,0 +1,11 @@
+<p>update-category</p>
+
+<form #f="ngForm">
+  Name: <input type="text" name="name" required minlength="4" [(ngModel)]="categoryy.name" #name="ngModel">
+  <div *ngIf="name.errors?.['required'] && name.touched">* Name is required. </div>
+  <span *ngIf="name.errors?.['minlength']">
+   minlength
+   </span>
+  <!-- <span *ngIf="name.errors?.['pattern']">only numbers</span>-->
+    <button (click)="updateCat()">Update Category</button>
+ </form>

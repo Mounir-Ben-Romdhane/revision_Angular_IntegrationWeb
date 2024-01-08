@@ -1,0 +1,77 @@
+{
+  "product": [
+    {
+      "name": "Sumsung",
+      "description": "yessss",
+      "price": "10",
+      "qte": "15",
+      "category": "1",
+      "id": 2
+    },
+    {
+      "name": "iphone13",
+      "description": "iphone13",
+      "price": "12",
+      "qte": "12",
+      "category": "1",
+      "id": 3
+    }
+  ],
+  "category": [
+    {
+      "name": "11111111",
+      "nbProduct": 0,
+      "id": 1
+    },
+    {
+      "name": "9393",
+      "nbProduct": 0,
+      "id": 2
+    }
+  ],
+  "annonces":[
+    {
+      "id": 1,
+      "titre": "string",
+      "description": "string string",
+      "position": "haut",
+      "etat": "annulé"
+    },
+    {
+      "id": 2,
+      "titre": "string",
+      "description": "string string",
+      "position": "haut",
+      "etat": "confirmé"
+    },
+    {
+      "id": 3,
+      "titre": "string",
+      "description": "string string",
+      "position": "haut",
+      "etat": "en attente"
+    },
+    {
+      "id": 4,
+      "titre": "string",
+      "description": "string string",
+      "position": "bas",
+      "etat": "en attente"
+    },
+    {
+      "id": 5,
+      "titre": "string",
+      "description": "string string",
+      "position": "bas",
+      "etat": "confirmé"
+    },
+    {
+      "id": 6,
+      "titre": "string",
+      "description": "string string",
+      "position": "bas",
+      "etat": "confirmé"
+    }
+
+  ]
+}

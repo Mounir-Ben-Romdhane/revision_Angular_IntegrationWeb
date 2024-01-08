@@ -1,0 +1,40 @@
+<!--<div *ngFor="let apatment of listApartments">
+    id: {{apatment.id}} <br>
+    appartNum: {{apatment.appartNum}} <br>
+    floorNum: {{apatment.floorNum}} <br>
+    surface: {{apatment.surface}} <br>
+    terrace: {{apatment.terrace}} <br>
+    surfaceTerrace: {{apatment.surfaceTerrace}}<br>
+    category: {{apatment.category}}<br>
+    description: {{apatment.description}}<br>
+    residence id: {{apatment.residence.id}}<br>
+    *****************************
+</div> -->
+
+<div *ngFor="let residence of listResidences; let i = index">
+    id: {{residence.id}} <br>
+    name: {{residence.name}} <br>
+    address: {{residence.address}} <br>
+    image: {{residence.image}} <br>
+    <button (click)="showApartments(residence.id)">Show apartments</button><br>
+</div>
+
+
+<div *ngIf="showApp && listP.length >0">
+  <div *ngFor="let apatment of listP ">
+      id: {{apatment.id}} <br>
+      appartNum: {{apatment.appartNum}} <br>
+      floorNum: {{apatment.floorNum}} <br>
+      surface: {{apatment.surface}} <br>
+      terrace: {{apatment.terrace}} <br>
+      surfaceTerrace: {{apatment.surfaceTerrace}}<br>
+      category: {{apatment.category}}<br>
+      description: {{apatment.description}}<br>
+      <button (click)="like(apatment.id)">Like</button><br>
+      *****************************
+  </div>
+</div>
+<div *ngIf="listP.length==0">
+  <h1>No apartment found</h1>
+</div>
+************************** <br> <br>
