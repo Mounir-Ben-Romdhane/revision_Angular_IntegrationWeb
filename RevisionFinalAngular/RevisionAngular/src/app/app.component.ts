@@ -1,4 +1,4 @@
-import { Component, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, OnChanges, SimpleChanges, ViewChild, OnInit } from '@angular/core';
 import { PageComponent } from './ExamenCSA/page/page.component';
 
 @Component({
@@ -8,6 +8,8 @@ import { PageComponent } from './ExamenCSA/page/page.component';
 })
 export class AppComponent{
 
+  @ViewChild(PageComponent) private ch!:PageComponent;
+
   title = 'revisionFinal';
   search:any;
   listArticles = [
@@ -16,6 +18,10 @@ export class AppComponent{
     {titre:'Comment écrire votre CV',contenu:'Pour réussir à décraucher un emploi ...',auteur:'Marie Elsa',date:'02/04/2017'}
   ]
 
+  showTest(test:any){
+    console.log('test from child : ',test);
+    console.log('test ViewChild :' , this.ch.test);
+  }
 
 
 

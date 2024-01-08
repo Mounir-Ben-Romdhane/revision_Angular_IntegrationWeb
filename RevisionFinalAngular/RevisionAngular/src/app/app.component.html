@@ -2,7 +2,7 @@
 <h1>Les articles du jour</h1><br>
 Veuillez saisir le nombre d'articles a afficher dans la page
 <input type="number" [(ngModel)]="search">
-
+<button>{{child.test}}</button>
 <div>
-<app-page [listArticle] = "listArticles" [nbArticle]="search"></app-page>
+<app-page #child [listArticle] = "listArticles" [nbArticle]="search" (testOutput)="showTest($event)"></app-page>
 </div>
