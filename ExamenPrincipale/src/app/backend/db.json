@@ -1,0 +1,22 @@
+{
+  "product": [
+    {
+      "name": "Sumsung",
+      "description": "yessss",
+      "price": "10",
+      "qte": "15",
+      "category": "1",
+      "id": 2
+    }
+  ],
+  "annonces":[
+    {
+      "id": 1,
+      "titre": "string",
+      "description": "string string",
+      "position": "haut",
+      "etat": "annulé"
+    }
+
+  ]
+}
